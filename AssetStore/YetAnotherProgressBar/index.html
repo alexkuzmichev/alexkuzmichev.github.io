@@ -1,25 +1,105 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | VR Progress Bar</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
+
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/VRProgressBar.json", {onProgress: UnityProgress});
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/VRProgressBar.json", { onProgress: UnityProgress });
     </script>
-  </head>
-  <body>
+</head>
+<body>
+    <section class="hero is-dark is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <!-- <a class="navbar-item">
+                        <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        </a> -->
+                        <a href="https://alexkuzmichev.github.io/">
+                            <h2 class="title has-text-white">
+                                Doubtfulpixel
+                            </h2>
+                        </a>
+                        <!-- <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </span> -->
+                    </div>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="https://alexkuzmichev.github.io/">
+                                Home
+                            </a>
+                            <a class="navbar-item">
+                                Wire Terrain
+                            </a>
+                            <a class="navbar-item is-active" href="#">
+                                VR Progressbar
+                            </a>
+                            <a class="navbar-item">
+                                Wire Primitives
+                            </a>
+                            <a class="navbar-item">
+                                Contacts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- <div class="hero-body">
+        <div class="container">
+        <a href="https://alexkuzmichev.github.io/">
+        <h1 class="title is-1 has-text-white">
+        Doubtfulpixel
+        </h1>
+        </a>
+        <h2 class="subtitle">
+        thin lines
+        </h2>
+        </div>
+        </div> -->
+        <!-- <div class="hero-head">
+        <nav class="navbar">
+        <div class="container">
+        <div id="navbarMenuHeroB" class="navbar-menu">
+        <div class="navbar-start">
+        <a class="navbar-item">
+        Wire Primitives
+        </a>
+        <a class="navbar-item">
+        Wire Terrain
+        </a>
+        <a class="navbar-item">
+        VR Progressbar
+        </a>
+        <a class="navbar-item">
+        Contacts
+        </a>
+        </div>
+        </div> -->
+    </section>
+
+
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">VR Progress Bar</div>
-      </div>
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div class="title">VR Progress Bar</div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
