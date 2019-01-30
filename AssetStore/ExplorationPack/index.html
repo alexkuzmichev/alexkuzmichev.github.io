@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Arctic Exploration Vechicles Pack</title>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+
+
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ExplorationPack.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+  <section class="hero is-dark is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="https://alexkuzmichev.github.io/">
+                            <h2 class="title has-text-white">
+                                Doubtfulpixel
+                            </h2>
+                        </a>
+                    </div>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="https://alexkuzmichev.github.io/">
+                                Home
+                            </a>
+                            <a class="navbar-item" href="https://assetstore.unity.com/packages/slug/137548">
+                                Buy in Unity Asset Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer has-background-dark">      
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title has-text-white">Arctic Exploration Vechicles Pack</div>
+      </div>
+    </div>
+  </body>
+</html>
